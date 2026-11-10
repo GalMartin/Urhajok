@@ -106,7 +106,13 @@ namespace Urhajok
 
             MessageBox.Show(eredmeny, "Gyártók szerinti csoportosítás");
         }
-
+        private void kereses(object sender, RoutedEventArgs e)
+        {
+            string keresettNev = keresestxt.Text;
+            var talalat = Urhajok.Where(u => u.Nev.Contains(keresettNev)).ToList();
+            datagrid.ItemsSource = talalat;
+            datagrid.Items.Refresh();
+        }
 
 
     }

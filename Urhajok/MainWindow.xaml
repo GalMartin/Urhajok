@@ -42,6 +42,15 @@
                     Margin="10"
                     Padding="5"
                     Click="gyartokszerint"/>
+            <Button Content="Keresés név alapján"
+                    Width="150"
+                    Margin="10"
+                    Padding="5"
+                    Click="kereses"/>
+            <TextBox x:Name="keresestxt"
+                     Width="150"
+                     Margin="10"
+                     Padding="5"/>
         </StackPanel>
 
         <DataGrid x:Name="datagrid"
