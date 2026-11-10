@@ -32,6 +32,16 @@
                     Margin="10"
                     Padding="5"
                     Click="kuldetes"/>
+            <Button Content="Átlagos legénységszám"
+                    Width="150"
+                    Margin="10"
+                    Padding="5"
+                    Click="atlag"/>
+            <Button Content="Gyártók szerinti csoportosítás"
+                    Width="150"
+                    Margin="10"
+                    Padding="5"
+                    Click="gyartokszerint"/>
         </StackPanel>
 
         <DataGrid x:Name="datagrid"

@@ -83,6 +83,29 @@ namespace Urhajok
                 }
             }   
         }
+        private void atlag(object sender, RoutedEventArgs e)
+        {
+            double atlag = Urhajok.Average(f => f.Legenyseg);
+            MessageBox.Show($"Az űrhajók átlagos legénységszáma: {atlag}");
+        }
+        private void gyartokszerint(object sender, RoutedEventArgs e)
+        {
+            string eredmeny = "";
+
+            foreach (var csoport in Urhajok.GroupBy(u => u.Gyarto))
+            {
+                eredmeny += csoport.Key + ":\n";
+
+                foreach (var urhajo in csoport)
+                {
+                    eredmeny += urhajo.Nev + "\n";
+                }
+
+                eredmeny += "\n";
+            }
+
+            MessageBox.Show(eredmeny, "Gyártók szerinti csoportosítás");
+        }
 
 
 
