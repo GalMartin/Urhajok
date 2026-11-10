@@ -63,5 +63,10 @@ namespace Urhajok
             datagrid.ItemsSource = Urhajok;
             datagrid.Items.Refresh();
         }
+
+        private void hanyurhajo(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"A listában {Urhajok.Count} űrhajó található.");
+        }
     }
 }
