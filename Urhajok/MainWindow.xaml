@@ -22,6 +22,11 @@
                     Margin="10"
                     Padding="5"
                     Click="hanyurhajo"/>
+            <Button Content="Melyinek a leghosszabb a hatótáva?"
+                    Width="150"
+                    Margin="10"
+                    Padding="5"
+                    Click="leghosszabb"/>
         </StackPanel>
 
         <DataGrid x:Name="datagrid"

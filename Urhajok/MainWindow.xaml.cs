@@ -68,5 +68,10 @@ namespace Urhajok
         {
             MessageBox.Show($"A listában {Urhajok.Count} űrhajó található.");
         }
+        private void leghosszabb(object sender, RoutedEventArgs e)
+        {
+            var leghosszabb = Urhajok.OrderByDescending(f => f.MaxHatotav).FirstOrDefault();
+            MessageBox.Show($"A leghosszabb hatótávú űrhajó: {leghosszabb.Nev}, Hatótáv: {leghosszabb.MaxHatotav} km.");
+        }
     }
 }
