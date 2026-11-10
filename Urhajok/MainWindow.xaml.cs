@@ -56,5 +56,12 @@ namespace Urhajok
             new Urhajoadatok("Nebula-FX", 11, 870000, 60, "ESA", "Sikeres", 2020)
         };
         }
+
+
+        private void betoltes(object sender, RoutedEventArgs e)
+        {
+            datagrid.ItemsSource = Urhajok;
+            datagrid.Items.Refresh();
+        }
     }
 }
