@@ -73,5 +73,18 @@ namespace Urhajok
             var leghosszabb = Urhajok.OrderByDescending(f => f.MaxHatotav).FirstOrDefault();
             MessageBox.Show($"A leghosszabb hatótávú űrhajó: {leghosszabb.Nev}, Hatótáv: {leghosszabb.MaxHatotav} km.");
         }
+        private void kuldetes(object sender, RoutedEventArgs e)
+        {
+            foreach ( var urhajo in Urhajok)
+            {
+                if (urhajo.KuldetesStatusz == "Sikeres")
+                {
+                    MessageBox.Show($"A sikeres küldetésű űrhajó: {urhajo.Nev}");
+                }
+            }   
+        }
+
+
+
     }
 }

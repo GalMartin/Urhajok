@@ -27,6 +27,11 @@
                     Margin="10"
                     Padding="5"
                     Click="leghosszabb"/>
+            <Button Content="Kik voltak a küldetésen?"
+                    Width="150"
+                    Margin="10"
+                    Padding="5"
+                    Click="kuldetes"/>
         </StackPanel>
 
         <DataGrid x:Name="datagrid"
